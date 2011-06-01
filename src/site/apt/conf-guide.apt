@@ -1,0 +1,42 @@
+            ------
+            Technical Description of Visitor Info Module
+            ------
+            François Bivaud fbivaud@sopragroup.com
+            ------
+             01/06/2011
+            ------
+
+Technical Description of Visitor Info Module
+
+  Visitor module is primarily a tag library :
+
+      * <<Tag library definition>> : <resources/META-INF/visitorinfo.tld>,
+
+      * <<Facade pattern for visitor function>> : <org.jahia.modules.visitorinfo.VisitorInfoFacade.java>
+
+      * Sample view : <jnt_visitorinfo/html/visitorinfo.jsp>, <jnt_visitorinfo/html/visitormap.jsp>.
+
+  Now if you want to use the location functions, you can configure the resources/technical.properties file.\
+  The location functions are two modes online | offline.
+
+[./images/technical.png] Technical
+
+* Online mode
+
++------------------------------------------+
+online_db=http://api.ipinfodb.com/v3/
+# get a key on http://ipinfodb.com/register.php
+ip2location_key=7527941a8b4f9242146903cf1a4a9f8ffe1ade843dd70e9d89dd3ad27f2cae33
+# proxy configuration
+proxy_activation=true
+proxy_url=ptx.proxy.corp.sopra
+proxy_port=8080
+proxy_login=fbivaud
+proxy_pass=XXXX
++------------------------------------------+
+
+* Offline mode
+
++------------------------------------------+
+offline_db=C:/visitorinfo/csv/IP2LOCATION-LITE-DB1.CSV
++------------------------------------------+
