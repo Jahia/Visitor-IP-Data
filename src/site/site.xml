@@ -1,10 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/DECORATION/1.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/DECORATION/1.0.0 http://maven.apache.org/xsd/decoration-1.0.0.xsd">
-    <body>
-        <menu ref="parent"/>
-        <menu ref="modules"/>
-        <menu ref="reports"/>
-    </body>
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/DECORATION/1.0.0 http://maven.apache.org/xsd/decoration-1.0.0.xsd">
+	<!-- Header -->
+	<bannerRight>
+		<name>Sopra Group</name>
+		<src>http://www.sopragroup.com/content_data/sopragrp/images/logo.png</src>
+		<href>http://www.sopragroup.com</href>
+	</bannerRight>
+	<bannerLeft>
+		<name>Jahia Community</name>
+		<src>http://www.jahia.org/files/content/sites/JahiaOrg/files/logo-top.png</src>
+		<href>http://www.jahia.org/cms</href>
+	</bannerLeft>
+	<version position="right"/>
+	<!-- Body -->
+	<body>
+		<links>
+			<item name="github" href="https://github.com/Jahia/Visitor-IP-Data" />
+			<item name="jahia forge" href="http://beta65.jahia.org/cms/Forge" />
+			<item name="jahia issues tracking" href="http://jira.jahia.org/secure/Dashboard.jspa" />
+		</links>
+		<menu name="Visitor Info">
+			<item name="Introduction" href="index.html" />
+			<item name="Configuration Guide" href="conf-guide.html" />
+			<item name="Road Map" href="roadmap.html" />
+			<item name="Download" href="https://github.com/Jahia/Visitor-IP-Data" />
+		</menu>
+		<menu ref="reports" />
+	</body>
 </project>

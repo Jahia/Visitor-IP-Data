@@ -70,7 +70,7 @@ public class VisitorInfoLocation {
 	private static String online(String precision, String ip) {
 		String result = "";
 		// bouchon de test 
-		// ip = "81.80.239.162";
+		ip = "81.80.239.162";
 		String token_url = ResourceBundle.getBundle("technical").getString("online_db")
 				+ (precisionGps.equals(precision) || precisionCity.equals(precision) ? precisionCity
 						: precisionCountry)
@@ -151,7 +151,7 @@ public class VisitorInfoLocation {
 		String result;
 		
 		// Bouchon de test
-		// ip = "81.80.239.162";
+		ip = "81.80.239.162";
 		String[] results;
 		
 		String[] ipsplit = ip.split("\\.");
@@ -185,17 +185,33 @@ public class VisitorInfoLocation {
 	}
 
 	private static synchronized List<String[]> getLocations(HttpServletRequest request) {
+		FileReader file = null;
+		CSVReader reader= null;
 		try {
 			if (locations == null) {
 				String csvPath = ResourceBundle.getBundle("technical").getString("offline_db");
-				CSVReader reader = new CSVReader(new FileReader(csvPath));
+				file = new FileReader(csvPath);
+				reader = new CSVReader(file);
 				locations = reader.readAll();
+				file.close();
+				reader.close();
 				logger.debug("initialisation locations " + locations.size());
 			}
 		} catch (FileNotFoundException exp) {
 			logger.error(exp.getMessage());
 		} catch (IOException exp) {
 			logger.error(exp.getMessage());
+		} finally {
+			try {
+				if (file != null) {
+					file.close();
+				}
+				if (reader != null) {
+					reader.close();
+				}
+			} catch (IOException exp) {
+				logger.error(exp.getMessage());
+			}
 		}
 		return locations;
 	} 

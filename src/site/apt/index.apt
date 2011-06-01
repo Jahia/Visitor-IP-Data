@@ -1,1 +1,32 @@
-Visitor Info
+            ------
+            Functional Description of Visitor Info Module
+            ------
+            François Bivaud fbivaud@sopragroup.com
+            ------
+             01/06/2011
+            ------
+             
+Functional Description of Visitor Info Module
+
+  This module get the visitor information in HTTP Header Request.
+  Is a tool box for adapt the content to the user.\
+  For example, you can recover :
+
+      * <Remote Forward IP>,
+      
+      * <Remote Host>,
+
+      * <Navigator>.
+
+  By configuring IP to location services in online or offline mode, you can recover :
+
+      * <Country>,
+      
+      * <City>,
+
+      * <GPS>.
+
+  Both views are implemented, Extended visitor informations and Google map view visitor :
+  
+[./images/sample.png] Sample
+  
