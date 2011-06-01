@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd"
+        version="2.0">
+
+    <description>Jahia Visitor Info module tag library</description>
+    <display-name>Jahia Visitor Info Service</display-name>
+    <tlib-version>0.1</tlib-version>
+    <short-name>visitorinfo</short-name>
+    <uri>http://www.jahia.org/tags/visitorinfo</uri>
+    <function>
+        <description>Get the request header informations</description>
+        <name>header</name>
+        <function-class>org.jahia.modules.visitorinfo.VisitorInfoFacade</function-class>
+        <function-signature>String header(org.jahia.services.usermanager.JahiaUser, javax.servlet.http.HttpServletRequest, java.lang.String)</function-signature>
+    </function>
+    <function>
+        <description>Get the Remote Host informations</description>
+        <name>remoteHost</name>
+        <function-class>org.jahia.modules.visitorinfo.VisitorInfoFacade</function-class>
+        <function-signature>String remoteHost(org.jahia.services.usermanager.JahiaUser, javax.servlet.http.HttpServletRequest)</function-signature>
+    </function>
+    <function>
+        <description>Get the Remote Addr informations</description>
+        <name>remoteAddr</name>
+        <function-class>org.jahia.modules.visitorinfo.VisitorInfoFacade</function-class>
+        <function-signature>String remoteAddr(org.jahia.services.usermanager.JahiaUser, javax.servlet.http.HttpServletRequest)</function-signature>
+    </function>
+    <function>
+        <description>Get the Remote Port informations</description>
+        <name>remotePort</name>
+        <function-class>org.jahia.modules.visitorinfo.VisitorInfoFacade</function-class>
+        <function-signature>String remotePort(org.jahia.services.usermanager.JahiaUser, javax.servlet.http.HttpServletRequest)</function-signature>
+    </function>
+    <function>
+        <description>Get the Remote User informations</description>
+        <name>remoteUser</name>
+        <function-class>org.jahia.modules.visitorinfo.VisitorInfoFacade</function-class>
+        <function-signature>String remoteUser(org.jahia.services.usermanager.JahiaUser, javax.servlet.http.HttpServletRequest)</function-signature>
+    </function>
+    <function>
+        <description>Get the Remote Forward IP informations</description>
+        <name>xForwardFor</name>
+        <function-class>org.jahia.modules.visitorinfo.VisitorInfoFacade</function-class>
+        <function-signature>String xForwardFor(org.jahia.services.usermanager.JahiaUser, javax.servlet.http.HttpServletRequest)</function-signature>
+    </function>
+    <function>
+        <description>Get the Users informations</description>
+        <name>userPrincipal</name>
+        <function-class>org.jahia.modules.visitorinfo.VisitorInfoFacade</function-class>
+        <function-signature>String userPrincipal(org.jahia.services.usermanager.JahiaUser, javax.servlet.http.HttpServletRequest)</function-signature>
+    </function>
+    <function>
+        <description>Get the Path informations</description>
+        <name>pathInfo</name>
+        <function-class>org.jahia.modules.visitorinfo.VisitorInfoFacade</function-class>
+        <function-signature>String pathInfo(org.jahia.services.usermanager.JahiaUser, javax.servlet.http.HttpServletRequest)</function-signature>
+    </function>
+    <function>
+        <description>Get the country informations</description>
+        <name>country</name>
+        <function-class>org.jahia.modules.visitorinfo.VisitorInfoFacade</function-class>
+        <function-signature>String country(org.jahia.services.usermanager.JahiaUser, javax.servlet.http.HttpServletRequest)</function-signature>
+    </function>
+    <function>
+        <description>Get the City informations</description>
+        <name>city</name>
+        <function-class>org.jahia.modules.visitorinfo.VisitorInfoFacade</function-class>
+        <function-signature>String city(org.jahia.services.usermanager.JahiaUser, javax.servlet.http.HttpServletRequest)</function-signature>
+    </function>
+    <function>
+        <description>Get the latitude and longitude</description>
+        <name>gps</name>
+        <function-class>org.jahia.modules.visitorinfo.VisitorInfoFacade</function-class>
+        <function-signature>String gps(org.jahia.services.usermanager.JahiaUser, javax.servlet.http.HttpServletRequest)</function-signature>
+    </function>
+</taglib>

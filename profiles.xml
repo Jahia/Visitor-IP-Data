@@ -1,0 +1,48 @@
+<profilesXml>
+  <profiles>
+     <profile>
+       <id>configure</id>
+       <properties>
+           <jahia.configure.active>true</jahia.configure.active>
+           <jahia.configure.databaseType>mysql</jahia.configure.databaseType>           
+		   <jahia.configure.databaseUrl>jdbc:mysql://localhost/jahia?useUnicode=true&amp;characterEncoding=UTF-8&amp;useServerPrepStmts=false</jahia.configure.databaseUrl>
+           <jahia.configure.databaseUsername>root</jahia.configure.databaseUsername>
+           <jahia.configure.databasePassword>password</jahia.configure.databasePassword>
+           <jahia.configure.localIp>127.0.0.1</jahia.configure.localIp>
+           <jahia.configure.developmentMode>true</jahia.configure.developmentMode>
+           <jahia.configure.outputContainerCacheActivated>false</jahia.configure.outputContainerCacheActivated>
+           <jahia.deploy.processingServer>true</jahia.deploy.processingServer>
+       </properties>
+     </profile>
+     <profile>
+       <id>jahia6</id>
+       <properties>
+         <jahia.deploy.targetServerType>tomcat</jahia.deploy.targetServerType>
+         <jahia.deploy.targetServerVersion>6</jahia.deploy.targetServerVersion>
+         <jahia.deploy.targetServerDirectory>C:\package\jahia_install_dir\tomcat</jahia.deploy.targetServerDirectory>
+         <jahia.deploy.war.dirName>ROOT</jahia.deploy.war.dirName>
+         <jahia.deploy.war.contextPath>/</jahia.deploy.war.contextPath>
+         <jahia.deploy.war.servletPath>/cms</jahia.deploy.war.servletPath>
+         <jahia.debug.address>socket:hostname=localhost,port=5005</jahia.debug.address>
+		<jahia.test.url>http://localhost:8080</jahia.test.url>
+       </properties>
+     </profile>
+	 
+
+   <!--
+   <profile>
+       <id>jahia6</id>
+       <properties>
+         <jahia.deploy.targetServerType>jboss</jahia.deploy.targetServerType>
+         <jahia.deploy.targetServerVersion>4.2.x</jahia.deploy.targetServerVersion>
+         <jahia.deploy.targetServerDirectory>E:/jahia_workspace/Jahia_EE_v6.1.0_r31127_jboss_4.2.3.GA</jahia.deploy.targetServerDirectory>
+		 
+         <jahia.deploy.war.dirName>ROOT</jahia.deploy.war.dirName>
+         <jahia.deploy.war.contextPath>/</jahia.deploy.war.contextPath>
+         <jahia.deploy.war.servletPath>/cms</jahia.deploy.war.servletPath>
+         <jahia.debug.address>socket:hostname=localhost,port=5005</jahia.debug.address>
+		<jahia.test.url>http://localhost:8080</jahia.test.url>
+       </properties>
+     </profile>-->
+   </profiles>
+</profilesXml>

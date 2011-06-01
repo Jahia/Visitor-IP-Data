@@ -1,0 +1,8 @@
+<jnt = 'http://www.jahia.org/jahia/nt/1.0'>
+<jmix = 'http://www.jahia.org/jahia/mix/1.0'>
+
+[jmix:visitorContent] > jmix:droppableContent mixin
+
+[jnt:visitorinfo] > jnt:content, jmix:visitorContent, jmix:editorialContent
+
+[jnt:visitormap] > jnt:content, jmix:visitorContent, jmix:editorialContent
